@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./dist/app.js",
+    "build": "babel src -d dist",
+    "test": "mocha --require babel-register tests/*.js --exit",
+    "start-dev": "@powershell -Command $env:DEBUG='dev';nodemon --exec babel-node ./src/app.js"
   },
   "repository": {
     "type": "git",
