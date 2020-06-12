@@ -1,8 +1,8 @@
 const searchUsersPath = {
   get: {
     tags: ['user'],
-    summary: 'search for a question',
-    description: 'Allows to search for a question using question title',
+    summary: 'search for a user',
+    description: 'Allows to search for a users using name',
     parameters: [
       {
         name: 'name',
