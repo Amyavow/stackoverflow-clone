@@ -1,4 +1,4 @@
-// import API_URL from '../config/constants';
+import { config } from 'dotenv';
 import { signinPath, signupPath } from './paths/auth';
 import {
   signinReq, signinRes, signUpReq, signUpRes,
@@ -18,6 +18,8 @@ import {
 import { success, created } from './definitions/successResponse';
 import searchUsersPath from './paths/user';
 
+config();
+
 const swaggerDocument = {
   swagger: '2.0',
   info: {
@@ -27,7 +29,7 @@ const swaggerDocument = {
     header: 'none',
     contact: {},
   },
-  host: 'localhost:3000',
+  host: process.env.API_URL,
   basePath: '/api/v1',
   produces: ['application/json'],
   consumes: ['application/json'],
