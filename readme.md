@@ -1,7 +1,5 @@
 # Simple StackOverflow clone
 
-[![Build Status](https://travis-ci.org/Amyavow/stackoverflow-clone.svg?branch=develop)](https://travis-ci.org/Amyavow/stackoverflow-clone)
-
 > A simple implementation of Stackoverflow API with Node/Express.
 
 ## Features

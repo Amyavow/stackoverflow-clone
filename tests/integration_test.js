@@ -1,9 +1,9 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-require('@babel/polyfill');
-const User = require('../src/models/User');
+import chai from 'chai';
+import chaiHttp from 'chai-http';
+import '@babel/polyfill';
+import User from '../src/models/User';
 // import Question from '../src/models/Question';
-const app = require('../src/app');
+import app from '../src/app';
 
 const { expect } = chai;
 
