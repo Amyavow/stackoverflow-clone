@@ -9,7 +9,7 @@ export default class QuestionController {
           res.send(err);
         }
         if (!Array.isArray(questions) || !questions.length) {
-          res.status(400).json({
+          res.status(200).json({
             msg: 'No questions found',
           });
         }
